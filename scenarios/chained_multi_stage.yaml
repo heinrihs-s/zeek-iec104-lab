@@ -1,0 +1,28 @@
+name: chained_multi_stage
+description: >
+  Multi-stage shape: discovery, then targeted command burst, then quiet.
+  Stages chain on the same peer pair.
+
+stages:
+  - name: discover
+    duration_seconds: 180
+    asdu_type_ids: [100]
+    records_per_second_min: 0
+    records_per_second_max: 1
+
+  - name: target
+    duration_seconds: 90
+    asdu_type_ids: [45, 46]
+    records_per_second_min: 3
+    records_per_second_max: 8
+    ioa_pool_size: 6
+
+  - name: quiet
+    duration_seconds: 600
+    asdu_type_ids: []
+    records_per_second_min: 0
+    records_per_second_max: 0
+
+tags:
+  - multi_stage
+  - chained

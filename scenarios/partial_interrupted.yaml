@@ -1,0 +1,15 @@
+name: partial_interrupted
+description: >
+  General interrogation begins but the response stream is cut short
+  before reaching ActTerm.
+
+shape:
+  duration_seconds: 120
+  request_type_id: 100
+  partial_response: true
+  expected_response_count: 50
+  actual_response_count: 12
+
+tags:
+  - partial
+  - interrogation

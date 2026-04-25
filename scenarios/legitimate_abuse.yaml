@@ -1,0 +1,16 @@
+name: legitimate_abuse
+description: >
+  Operations that are individually valid but combined look wrong:
+  many select/execute pairs in a row against varied IOAs.
+
+shape:
+  duration_seconds: 300
+  records_per_second_min: 2
+  records_per_second_max: 6
+  asdu_type_ids: [45, 46]
+  cot_sequence: [6, 7]   # Act, ActCon
+  ioa_pool_size: 30
+
+tags:
+  - abuse
+  - legitimate_lookalike

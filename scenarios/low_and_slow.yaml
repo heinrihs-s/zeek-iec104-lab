@@ -1,0 +1,18 @@
+name: low_and_slow
+description: >
+  Sparse activity stretched over a long window. Common shape that
+  evades naive rate-only detectors.
+
+shape:
+  duration_seconds: 7200
+  records_per_minute_min: 0
+  records_per_minute_max: 1
+  asdu_type_ids: [45]
+  cot_default: 6
+  ioa_pool_size: 8
+  jitter_seconds: 30
+
+tags:
+  - slow
+  - command
+  - stealth

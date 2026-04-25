@@ -1,0 +1,14 @@
+name: toy_scenario
+description: >
+  Tiny scenario template. Use it as a starting point for your own files.
+
+shape:
+  duration_seconds: 60
+  records_per_second_min: 1
+  records_per_second_max: 2
+  asdu_type_ids: [45]
+  cot_default: 6
+  ioa_pool_size: 2
+
+tags:
+  - toy

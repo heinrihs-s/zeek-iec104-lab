@@ -1,0 +1,14 @@
+name: unseen_typeids
+description: >
+  Traffic introducing ASDU type ids the site has never used before.
+
+shape:
+  duration_seconds: 300
+  records_per_second_min: 1
+  records_per_second_max: 2
+  asdu_type_ids: [110, 111, 112]
+  cot_default: 6
+
+tags:
+  - type_id
+  - novel

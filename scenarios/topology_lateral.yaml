@@ -1,0 +1,17 @@
+name: topology_lateral
+description: >
+  An existing peer starts talking to a different downstream device on
+  the bus. Same source, new destination.
+
+shape:
+  duration_seconds: 900
+  records_per_second_min: 1
+  records_per_second_max: 4
+  asdu_type_ids: [100, 45]
+  cot_default: 6
+  reuse_src: true
+  new_dst: true
+
+tags:
+  - topology
+  - lateral

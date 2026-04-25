@@ -1,0 +1,16 @@
+name: topology_new_peer
+description: >
+  A previously unseen src/dst pair appears on the bus and starts
+  exchanging IEC-104 traffic.
+
+shape:
+  duration_seconds: 600
+  records_per_second_min: 1
+  records_per_second_max: 3
+  asdu_type_ids: [100, 1, 3]
+  cot_default: 6
+  new_peer_pair: true
+
+tags:
+  - topology
+  - new_peer

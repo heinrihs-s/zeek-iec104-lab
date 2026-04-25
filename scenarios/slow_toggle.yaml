@@ -1,0 +1,17 @@
+name: slow_toggle
+description: >
+  Repeatedly toggles a single output with a long delay between toggles.
+  Hard to spot on rate, easy to spot on polarity over time.
+
+shape:
+  duration_seconds: 3600
+  asdu_type_ids: [45]
+  cot_default: 6
+  ioa_target_count: 1
+  toggle_interval_seconds_min: 90
+  toggle_interval_seconds_max: 240
+
+tags:
+  - toggle
+  - polarity
+  - slow
