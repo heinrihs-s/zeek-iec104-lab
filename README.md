@@ -1,9 +1,11 @@
-# zeek-iec104-lab
+# Zeek IEC-104 Lab
 
-Tiny helper scripts for playing with synthetic IEC-104-ish Zeek records.
+Tiny helper scripts for working with synthetic IEC-104-style Zeek records.
 
 This is for lab data, toy records, queue counting, and preservation checks.
 It does not include traffic captures and does not talk to live IEC-104 devices.
+
+Keywords: Zeek, IEC 60870-5-104, IEC-104, SCADA, ICS security, OT security, synthetic records, detection engineering.
 
 ## Layout
 
@@ -41,6 +43,12 @@ looks like a live target (`--host`, `--ip`, `--target`, `--port`, `--connect`,
 `--send`). See `docs/safety.md`.
 
 Everything here is boring on purpose: files in, counts out.
+
+## Related IEC-104 / SCADA Repos
+
+- [Scada-Agent-SafetyBench](https://github.com/heinrihs-s/Scada-Agent-SafetyBench) - simulation-only safety benchmark for AI assistants in SCADA/IEC-104 workflows.
+- [IEC-60870-5-104-Threat-Scenario-Generator](https://github.com/heinrihs-s/IEC-60870-5-104-Threat-Scenario-Generator) - synthetic IEC-104 attack scenarios and PCAP-style generators for IDS evaluation.
+- [iec104-rulebook](https://github.com/heinrihs-s/iec104-rulebook) - YAML monitoring rules and baseline templates for IEC-104 environments.
 
 ## License
 
