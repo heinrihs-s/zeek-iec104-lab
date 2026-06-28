@@ -50,6 +50,10 @@ Everything here is boring on purpose: files in, counts out.
 - [IEC-60870-5-104-Threat-Scenario-Generator](https://github.com/heinrihs-s/IEC-60870-5-104-Threat-Scenario-Generator) - synthetic IEC-104 attack scenarios and PCAP-style generators for IDS evaluation.
 - [iec104-rulebook](https://github.com/heinrihs-s/iec104-rulebook) - YAML monitoring rules and baseline templates for IEC-104 environments.
 
+## Agent-Friendly Workflow
+
+This repo includes `AGENTS.md` for Codex, Claude Code, and other coding agents. Good tasks include adding toy fixtures, improving validation, and writing tests for the helper scripts. Keep all workflows file-in/file-out.
+
 ## License
 
 MIT. See `LICENSE`.
